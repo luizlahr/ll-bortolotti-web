@@ -29,8 +29,7 @@ function getFieldValue(value: [], field: string) {
 
   let current = value;
 
-  for (let x: number = 0; x <= nested.length; x++) {
-    const key = nested[x];
+  for (let key in nested) {
     if (typeof current[key] !== 'object') {
       return current[key];
     }

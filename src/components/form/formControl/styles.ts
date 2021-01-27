@@ -1,4 +1,4 @@
-import { transparentize, math } from 'polished';
+import { transparentize } from 'polished';
 import styled, { css } from 'styled-components';
 
 interface ContainerProps {
@@ -31,6 +31,10 @@ export const Container = styled.div<ContainerProps>`
   }
 
   ${props => props.hasError && css`
+    label { 
+      color: ${props => props.theme.forms.errors.color};
+    }
+
     .ll-input{
       border: ${props => props.theme.forms.errors.input.border};
 

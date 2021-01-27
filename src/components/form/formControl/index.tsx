@@ -1,7 +1,6 @@
 import { HTMLAttributes, useState, useEffect } from "react";
 import { Container } from './styles'
 
-
 interface FormControlProps extends HTMLAttributes<HTMLDivElement> {
   label?: string;
   name?: string;

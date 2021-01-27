@@ -148,13 +148,14 @@ export const ContactForm: React.FC<FormProps> = ({defaultValues, onSubmit,  vali
             <Select name="state" control={control} options={stateOptions} />
           </FormControl>
         </Col>
+        <Col xs={24}>
+          <FormActions>
+            <Button color="primary">Salvar</Button>
+            <Button href="/contacts">Cancelar</Button>
+          </FormActions>
+        </Col>
       </Row>
       </fieldset>
-
-      <FormActions>
-        <Button color="primary">Salvar</Button>
-        <Button href="/contacts">Cancelar</Button>
-      </FormActions>
     </form>
   );
 }
